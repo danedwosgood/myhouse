@@ -1,0 +1,662 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Germany Apartment &amp; Retirement Funding Dashboard — TAXES NOT MODELED</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer="" src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <style>
+    [x-cloak] { display: none !important; }
+    [contenteditable="true"]:hover { outline: 1px dashed #94a3b8; cursor: text; }
+    [contenteditable="true"]:focus { outline: 2px solid #2563eb; background: rgba(255,255,255,0.1); border-radius: 2px; }
+    .table-compact td, .table-compact th { padding: 0.45rem; border-bottom: 1px solid #e2e8f0; }
+    .neg-num { color: #dc2626; font-weight: 700; }
+    input[type="range"] { accent-color: #1d4ed8; }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.flex{display:flex}.grid{display:grid}.h-fit{height:-moz-fit-content;height:fit-content}.w-full{width:100%}.max-w-7xl{max-width:80rem}.list-disc{list-style-type:disc}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.rounded{border-radius:0.25rem}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-l-8{border-left-width:8px}.border-t{border-top-width:1px}.border-t-4{border-top-width:4px}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-amber-500{--tw-border-opacity:1;border-color:rgb(245 158 11 / var(--tw-border-opacity, 1))}.border-blue-200{--tw-border-opacity:1;border-color:rgb(191 219 254 / var(--tw-border-opacity, 1))}.border-blue-800{--tw-border-opacity:1;border-color:rgb(30 64 175 / var(--tw-border-opacity, 1))}.border-blue-950{--tw-border-opacity:1;border-color:rgb(23 37 84 / var(--tw-border-opacity, 1))}.border-green-200{--tw-border-opacity:1;border-color:rgb(187 247 208 / var(--tw-border-opacity, 1))}.border-green-700{--tw-border-opacity:1;border-color:rgb(21 128 61 / var(--tw-border-opacity, 1))}.border-purple-200{--tw-border-opacity:1;border-color:rgb(233 213 255 / var(--tw-border-opacity, 1))}.border-purple-700{--tw-border-opacity:1;border-color:rgb(126 34 206 / var(--tw-border-opacity, 1))}.border-red-200{--tw-border-opacity:1;border-color:rgb(254 202 202 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-blue-950{--tw-bg-opacity:1;background-color:rgb(23 37 84 / var(--tw-bg-opacity, 1))}.bg-green-50{--tw-bg-opacity:1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.bg-green-700{--tw-bg-opacity:1;background-color:rgb(21 128 61 / var(--tw-bg-opacity, 1))}.bg-purple-100{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity, 1))}.bg-purple-50{--tw-bg-opacity:1;background-color:rgb(250 245 255 / var(--tw-bg-opacity, 1))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-700{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/80{background-color:rgb(255 255 255 / 0.8)}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.pb-2{padding-bottom:0.5rem}.pl-5{padding-left:1.25rem}.pt-2{padding-top:0.5rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-amber-900{--tw-text-opacity:1;color:rgb(120 53 15 / var(--tw-text-opacity, 1))}.text-amber-950{--tw-text-opacity:1;color:rgb(69 26 3 / var(--tw-text-opacity, 1))}.text-blue-200{--tw-text-opacity:1;color:rgb(191 219 254 / var(--tw-text-opacity, 1))}.text-blue-900{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.text-blue-950{--tw-text-opacity:1;color:rgb(23 37 84 / var(--tw-text-opacity, 1))}.text-green-800{--tw-text-opacity:1;color:rgb(22 101 52 / var(--tw-text-opacity, 1))}.text-green-900{--tw-text-opacity:1;color:rgb(20 83 45 / var(--tw-text-opacity, 1))}.text-purple-800{--tw-text-opacity:1;color:rgb(107 33 168 / var(--tw-text-opacity, 1))}.text-purple-900{--tw-text-opacity:1;color:rgb(88 28 135 / var(--tw-text-opacity, 1))}.text-red-900{--tw-text-opacity:1;color:rgb(127 29 29 / var(--tw-text-opacity, 1))}.text-red-950{--tw-text-opacity:1;color:rgb(69 10 10 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.text-green-700{--tw-text-opacity:1;color:rgb(21 128 61 / var(--tw-text-opacity, 1))}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:bg-green-800:hover{--tw-bg-opacity:1;background-color:rgb(22 101 52 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:w-1\/3{width:33.333333%}.lg\:w-2\/3{width:66.666667%}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}}@media (min-width: 1280px){.xl\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}</style></head>
+<body class="bg-slate-100 p-4" x-data="retirementApp()" x-init="init()">
+  <div class="max-w-7xl mx-auto space-y-6">
+    <header class="bg-blue-950 text-white p-6 rounded-xl shadow-lg">
+      <h1 class="text-3xl font-bold" contenteditable="true" x-text="ui.mainTitle" @blur="ui.mainTitle = cleanEdit($event)">Germany Apartment &amp; Retirement Funding Dashboard — TAXES NOT MODELED</h1>
+      <p class="text-blue-200" contenteditable="true" x-text="ui.subTitle" @blur="ui.subTitle = cleanEdit($event)">Balance German loan size, ML/Morgan Stanley stock sales, apartment cashflow, and retirement value</p>
+    </header>
+
+    <section class="bg-amber-50 border-l-8 border-amber-500 p-5 rounded-xl shadow-md">
+      <h2 class="text-xl font-black text-amber-950 uppercase">Tax warning: this dashboard does not calculate taxes</h2>
+      <p class="mt-2 text-sm text-amber-950 leading-relaxed">
+        The numbers below are pre-tax planning estimates. They can materially overstate available cash and retirement income if selling ML or Morgan Stanley stock creates taxable gains, if German tax residency applies, or if German purchase costs must be paid in cash.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4 text-sm">
+        <div class="bg-white/80 p-3 rounded-lg border border-amber-200">
+          <div class="font-black text-amber-950">U.S. stock-sale tax</div>
+          <div class="text-slate-700">Long-term federal capital gains are commonly 0%, 15%, or 20%; high-income taxpayers may also owe 3.8% NIIT, plus possible state tax. Tax applies to gains, not gross sale proceeds.</div>
+        </div>
+        <div class="bg-white/80 p-3 rounded-lg border border-amber-200">
+          <div class="font-black text-amber-950">German purchase costs</div>
+          <div class="text-slate-700">Typical buyer-side extra costs can include transfer tax, notary/land registry, and broker commission. A rough stress-test range is 5.5%–15% of purchase price.</div>
+        </div>
+        <div class="bg-white/80 p-3 rounded-lg border border-amber-200">
+          <div class="font-black text-amber-950">German investment/rental tax</div>
+          <div class="text-slate-700">German tax residency can change the treatment of investment income, capital gains, and rental income. German capital income often has 25% withholding tax plus solidarity surcharge.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div class="bg-white p-4 rounded-xl shadow border-t-4 border-blue-800">
+        <div class="text-xs uppercase tracking-wider text-slate-500 font-bold" contenteditable="true" x-text="ui.cardApartment" @blur="ui.cardApartment = cleanEdit($event)">Apartment Cost</div>
+        <div class="text-2xl font-black text-blue-950" x-text="fmtEur(apartmentCost)">€500,000</div>
+        <div class="text-xs text-slate-500" x-text="fmtUsd(eurToUsd(apartmentCost))">$550,000</div>
+      </div>
+      <div class="bg-white p-4 rounded-xl shadow border-t-4 border-amber-500" :class="loanAmount &gt; 0 ? 'border-amber-500' : 'border-green-600'">
+        <div class="text-xs uppercase tracking-wider text-slate-500 font-bold" contenteditable="true" x-text="ui.cardLoan" @blur="ui.cardLoan = cleanEdit($event)">German Loan Needed</div>
+        <div class="text-2xl font-black text-amber-700" :class="loanAmount &gt; 0 ? 'text-amber-700' : 'text-green-700'" x-text="fmtEur(loanAmount)">€198,182</div>
+        <div class="text-xs text-slate-500" x-text="fmtUsd(eurToUsd(loanAmount))">$218,000</div>
+      </div>
+      <div class="bg-white p-4 rounded-xl shadow border-t-4 border-green-700">
+        <div class="text-xs uppercase tracking-wider text-slate-500 font-bold" contenteditable="true" x-text="ui.cardMonthly" @blur="ui.cardMonthly = cleanEdit($event)">Loan Payment</div>
+        <div class="text-2xl font-black text-green-800" x-text="fmtEur(germanLoanPayment)">€2,025</div>
+        <div class="text-xs text-slate-500" x-text="fmtUsd(eurToUsd(germanLoanPayment)) + ' / month'">$2,228 / month</div>
+      </div>
+      <div class="bg-white p-4 rounded-xl shadow border-t-4 border-purple-700">
+        <div class="text-xs uppercase tracking-wider text-slate-500 font-bold" contenteditable="true" x-text="ui.cardRetirement" @blur="ui.cardRetirement = cleanEdit($event)">Projected Retirement Total</div>
+        <div class="text-2xl font-black text-purple-900" x-text="fmtUsd(totalRetirementUsd)">$6,106,613</div>
+        <div class="text-xs text-slate-500" x-text="'Actual: ' + fmtEur(usdToEur(totalRetirementUsd)) + ' · Today\'s $: ' + fmtUsd(totalRetirementRealUsd)">Actual: €5,551,466 · Today's $: $4,551,253</div>
+      </div>
+    </section>
+
+    <div class="flex flex-col lg:flex-row gap-6">
+      <aside class="w-full lg:w-1/3 bg-white p-6 rounded-xl shadow-md h-fit space-y-6 border-t-4 border-blue-950">
+        <div class="space-y-5">
+          <h3 class="font-bold text-blue-950 uppercase tracking-wider border-b pb-2" contenteditable="true" x-text="ui.generalHeading" @blur="ui.generalHeading = cleanEdit($event)">General Assumptions</h3>
+
+          <div class="space-y-1">
+            <div class="flex justify-between items-center">
+              <label class="text-xs font-bold text-slate-700" contenteditable="true" x-text="ui.apartmentCostLabel" @blur="ui.apartmentCostLabel = cleanEdit($event)">Apartment cost</label>
+              <span class="bg-blue-100 text-blue-900 px-2 py-1 rounded text-xs font-bold" x-text="fmtEur(apartmentCost) + ' / ' + fmtUsd(eurToUsd(apartmentCost))">€500,000 / $550,000</span>
+            </div>
+            <input class="w-full" type="range" min="300000" max="700000" step="5000" x-model.number="apartmentCost">
+            <div class="flex justify-between text-[10px] text-slate-400"><span>€300k</span><span>€700k</span></div>
+          </div>
+
+          <div class="space-y-1">
+            <div class="flex justify-between items-center">
+              <label class="text-xs font-bold text-slate-700" contenteditable="true" x-text="ui.expectationLabel" @blur="ui.expectationLabel = cleanEdit($event)">Investment expectation</label>
+              <span class="bg-blue-100 text-blue-900 px-2 py-1 rounded text-xs font-bold" x-text="pct(investRate)">7.0%</span>
+            </div>
+            <input class="w-full" type="range" min="0.05" max="0.10" step="0.001" x-model.number="investRate">
+            <div class="flex justify-between text-[10px] text-slate-400"><span>5%</span><span>10%</span></div>
+          </div>
+
+          <div class="space-y-1">
+            <div class="flex justify-between items-center">
+              <label class="text-xs font-bold text-slate-700" contenteditable="true" x-text="ui.inflationLabel" @blur="ui.inflationLabel = cleanEdit($event)">Inflation expectation</label>
+              <span class="bg-amber-100 text-amber-900 px-2 py-1 rounded text-xs font-bold" x-text="pct(inflationRate)">2.5%</span>
+            </div>
+            <input class="w-full" type="range" min="0" max="0.06" step="0.001" x-model.number="inflationRate">
+            <div class="flex justify-between text-[10px] text-slate-400"><span>0%</span><span>6%</span></div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="text-[11px] font-bold text-slate-600" contenteditable="true" x-text="ui.eurUsdLabel" @blur="ui.eurUsdLabel = cleanEdit($event)">EUR → USD</label>
+              <input class="w-full p-2 border rounded bg-slate-50 font-mono" type="number" step="0.01" x-model.number="eurUsd">
+            </div>
+            <div>
+              <label class="text-[11px] font-bold text-slate-600" contenteditable="true" x-text="ui.audUsdLabel" @blur="ui.audUsdLabel = cleanEdit($event)">AUD → USD</label>
+              <input class="w-full p-2 border rounded bg-slate-50 font-mono" type="number" step="0.01" x-model.number="audUsd">
+            </div>
+          </div>
+
+          <div class="space-y-1 pt-2">
+            <div class="flex justify-between items-center">
+              <label class="text-xs font-bold text-slate-700" contenteditable="true" x-text="ui.retireYearsLabel" @blur="ui.retireYearsLabel = cleanEdit($event)">Years to retirement</label>
+              <span class="bg-purple-100 text-purple-900 px-2 py-1 rounded text-xs font-bold" x-text="yearsToRetirement + ' years'">12 years</span>
+            </div>
+            <input class="w-full" type="range" min="10" max="15" step="1" x-model.number="yearsToRetirement">
+          </div>
+        </div>
+
+        <div class="space-y-2 pt-4 border-t">
+          <button @click="saveHtml()" class="w-full bg-green-700 hover:bg-green-800 text-white text-xs font-bold py-3 rounded-lg shadow uppercase tracking-widest">Save Current Version</button>
+          <button @click="resetDefaults()" class="w-full bg-slate-700 hover:bg-slate-800 text-white text-xs font-bold py-2 rounded-lg shadow uppercase tracking-widest">Reset to Defaults</button>
+        </div>
+      </aside>
+
+      <main class="w-full lg:w-2/3 space-y-6">
+        <section class="bg-white p-6 rounded-xl shadow-md">
+          <h3 class="font-bold text-lg mb-4 border-b pb-2 text-blue-950 uppercase" contenteditable="true" x-text="ui.loanHeading" @blur="ui.loanHeading = cleanEdit($event)">I. German Loan</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+            <div>
+              <label class="text-xs font-bold text-slate-600" contenteditable="true" x-text="ui.cashDownEuroLabel" @blur="ui.cashDownEuroLabel = cleanEdit($event)">Total downpayment (€)</label>
+              <input type="text" inputmode="numeric" class="w-full p-2 border rounded-md bg-slate-50 font-bold text-blue-950" :value="fmtNum(cashDownEuro)" @input="cashDownEuro = parseNum($event.target.value); downpaymentIsManual = true" @blur="$event.target.value = fmtNum(cashDownEuro)">
+              <p class="text-xs text-slate-500 mt-1" x-text="fmtUsd(eurToUsd(cashDownEuro)) + ' · stock-sale default: ' + fmtEur(stockDownEuro) + ' (not added twice)'">$332,000 · stock-sale default: €301,818 (not added twice)</p>
+            </div>
+            <div>
+              <label class="text-xs font-bold text-slate-600" contenteditable="true" x-text="ui.loanRateLabel" @blur="ui.loanRateLabel = cleanEdit($event)">Loan interest rate</label>
+              <input class="w-full" type="range" min="0.03" max="0.08" step="0.001" x-model.number="loanRate">
+              <p class="text-xs font-bold text-blue-900" x-text="pct(loanRate)">4.2%</p>
+            </div>
+            <div>
+              <label class="text-xs font-bold text-slate-600" contenteditable="true" x-text="ui.loanYearsLabel" @blur="ui.loanYearsLabel = cleanEdit($event)">Years to pay off</label>
+              <input class="w-full" type="range" min="5" max="15" step="1" x-model.number="loanYears">
+              <p class="text-xs font-bold text-blue-900" x-text="loanYears + ' years'">10 years</p>
+            </div>
+          </div>
+
+          <table class="w-full text-sm table-compact">
+            <tbody>
+              <tr><td contenteditable="true" x-text="ui.loanTotalDown" @blur="ui.loanTotalDown = cleanEdit($event)">Total downpayment</td><td class="text-right font-bold" x-text="fmtEur(totalDownEuro) + ' / ' + fmtUsd(eurToUsd(totalDownEuro))">€301,818 / $332,000</td></tr>
+              <tr><td contenteditable="true" x-text="ui.loanAmountLabel" @blur="ui.loanAmountLabel = cleanEdit($event)">Loan amount</td><td class="text-right font-bold" x-text="fmtEur(loanAmount) + ' / ' + fmtUsd(eurToUsd(loanAmount))">€198,182 / $218,000</td></tr>
+              <tr><td contenteditable="true" x-text="ui.loanMonthlyLabel" @blur="ui.loanMonthlyLabel = cleanEdit($event)">Monthly payment</td><td class="text-right font-bold text-green-800" x-text="fmtEur(germanLoanPayment) + ' / ' + fmtUsd(eurToUsd(germanLoanPayment))">€2,025 / $2,228</td></tr>
+              <tr><td contenteditable="true" x-text="ui.loanAnnualLabel" @blur="ui.loanAnnualLabel = cleanEdit($event)">Annual payment</td><td class="text-right font-bold" x-text="fmtEur(germanLoanPayment * 12) + ' / ' + fmtUsd(eurToUsd(germanLoanPayment * 12))">€24,305 / $26,735</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="bg-white p-6 rounded-xl shadow-md border-t-4 border-amber-500">
+          <h3 class="font-bold text-lg mb-4 border-b pb-2 text-amber-950 uppercase">Tax and closing-cost warnings not included in totals</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+            <div class="bg-amber-50 p-4 rounded-lg border border-amber-200">
+              <div class="text-xs font-bold uppercase text-amber-900">Estimated German purchase costs</div>
+              <div class="text-2xl font-black text-amber-950" x-text="fmtEur(germanClosingCostLowEuro) + ' – ' + fmtEur(germanClosingCostHighEuro)">€27,500 – €75,000</div>
+              <div class="text-xs text-slate-600 mt-1" x-text="fmtUsd(eurToUsd(germanClosingCostLowEuro)) + ' – ' + fmtUsd(eurToUsd(germanClosingCostHighEuro))">$30,250 – $82,500</div>
+              <div class="text-xs text-slate-500 mt-1">Rough 5.5%–15% range; not included in loan or downpayment math.</div>
+            </div>
+            <div class="bg-amber-50 p-4 rounded-lg border border-amber-200">
+              <div class="text-xs font-bold uppercase text-amber-900">Cash needed if closing costs are cash</div>
+              <div class="text-2xl font-black text-amber-950" x-text="fmtEur(cashNeededWithClosingLowEuro) + ' – ' + fmtEur(cashNeededWithClosingHighEuro)">€329,318 – €376,818</div>
+              <div class="text-xs text-slate-600 mt-1" x-text="fmtUsd(eurToUsd(cashNeededWithClosingLowEuro)) + ' – ' + fmtUsd(eurToUsd(cashNeededWithClosingHighEuro))">$362,250 – $414,500</div>
+              <div class="text-xs text-slate-500 mt-1">Current modeled downpayment plus estimated closing costs.</div>
+            </div>
+            <div class="bg-red-50 p-4 rounded-lg border border-red-200">
+              <div class="text-xs font-bold uppercase text-red-900">Stock sale tax can reduce downpayment</div>
+              <div class="text-sm text-red-950 leading-relaxed">The ML/Morgan Stanley sale boxes use gross sale values. Actual cash available could be lower by U.S. federal/state tax, NIIT, and possibly German tax depending on residence and treaty details.</div>
+            </div>
+          </div>
+          <table class="w-full text-sm table-compact">
+            <tbody>
+              <tr><td>U.S. federal long-term capital gains planning range</td><td class="text-right font-bold">0%, 15%, or 20% on gains</td></tr>
+              <tr><td>Possible U.S. Net Investment Income Tax</td><td class="text-right font-bold">3.8% for high-income taxpayers</td></tr>
+              <tr><td>German capital income headline withholding</td><td class="text-right font-bold">25% plus 5.5% solidarity surcharge on the tax</td></tr>
+              <tr><td>German buyer-side purchase-cost stress test</td><td class="text-right font-bold">5.5% low / 9% middle / 15% high of purchase price</td></tr>
+            </tbody>
+          </table>
+          <p class="text-xs text-slate-500 mt-3">These are rough warning ranges only. The calculator still shows pre-tax values; consult a U.S./German cross-border tax professional before selling assets or buying property.</p>
+        </section>
+
+        <section class="grid grid-cols-1 xl:grid-cols-2 gap-4">
+          <div class="bg-white p-5 rounded-xl shadow-md border border-slate-200">
+            <h3 class="font-bold text-lg mb-4 border-b pb-2 text-blue-950 uppercase" contenteditable="true" x-text="ui.mlHeading" @blur="ui.mlHeading = cleanEdit($event)">II. Merrill Lynch Stock Sale</h3>
+            <div class="grid grid-cols-2 gap-3 mb-4">
+              <div>
+                <label class="text-xs font-bold text-slate-600" contenteditable="true" x-text="ui.initialUsdLabel" @blur="ui.initialUsdLabel = cleanEdit($event)">Initial value ($)</label>
+                <input type="text" inputmode="numeric" class="w-full p-2 border rounded bg-slate-50" :value="fmtNum(mlInitialUsd)" @input="mlInitialUsd = parseNum($event.target.value)" @blur="$event.target.value = fmtNum(mlInitialUsd)">
+                <p class="text-xs text-slate-500 mt-1" x-text="fmtUsd(mlInitialUsd) + ' / ' + fmtEur(usdToEur(mlInitialUsd))">$474,758 / €431,598</p>
+              </div>
+              <div>
+                <label class="text-xs font-bold text-slate-600" contenteditable="true" x-text="ui.downUsdLabel" @blur="ui.downUsdLabel = cleanEdit($event)">Downpayment sale ($)</label>
+                <input type="text" inputmode="numeric" class="w-full p-2 border rounded bg-slate-50" :value="fmtNum(mlDownUsd)" @input="mlDownUsd = parseNum($event.target.value); resetDownpaymentToStockSales()" @blur="$event.target.value = fmtNum(mlDownUsd)">
+                <p class="text-xs text-slate-500 mt-1" x-text="fmtUsd(mlDownUsd) + ' / ' + fmtEur(usdToEur(mlDownUsd))">$200,000 / €181,818</p>
+              </div>
+            </div>
+            <table class="w-full text-xs table-compact">
+              <tbody>
+                <tr><td>Downpayment used</td><td class="text-right font-bold" x-text="fmtUsd(mlDownUsd) + ' / ' + fmtEur(usdToEur(mlDownUsd))">$200,000 / €181,818</td></tr>
+                <tr><td>Value left invested</td><td class="text-right font-bold" x-text="fmtUsd(mlRemainingUsd)">$274,758</td></tr>
+                <tr><td>Retirement value</td><td class="text-right font-bold text-purple-800" x-text="fmtUsd(mlRetirementUsd)">$618,807</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="bg-white p-5 rounded-xl shadow-md border border-slate-200">
+            <h3 class="font-bold text-lg mb-4 border-b pb-2 text-blue-950 uppercase" contenteditable="true" x-text="ui.msHeading" @blur="ui.msHeading = cleanEdit($event)">III. Morgan Stanley Stock Sale</h3>
+            <div class="grid grid-cols-2 gap-3 mb-4">
+              <div>
+                <label class="text-xs font-bold text-slate-600" contenteditable="true" x-text="ui.initialAudLabel" @blur="ui.initialAudLabel = cleanEdit($event)">Initial value (A$)</label>
+                <input type="text" inputmode="numeric" class="w-full p-2 border rounded bg-slate-50" :value="fmtNum(msInitialAud)" @input="msInitialAud = parseNum($event.target.value)" @blur="$event.target.value = fmtNum(msInitialAud)">
+                <p class="text-xs text-slate-500 mt-1" x-text="fmtAud(msInitialAud) + ' / ' + fmtUsd(audToUsd(msInitialAud))">A$395,530 / $261,050</p>
+              </div>
+              <div>
+                <label class="text-xs font-bold text-slate-600" contenteditable="true" x-text="ui.downAudLabel" @blur="ui.downAudLabel = cleanEdit($event)">Downpayment sale (A$)</label>
+                <input type="text" inputmode="numeric" class="w-full p-2 border rounded bg-slate-50" :value="fmtNum(msDownAud)" @input="msDownAud = parseNum($event.target.value); resetDownpaymentToStockSales()" @blur="$event.target.value = fmtNum(msDownAud)">
+                <p class="text-xs text-slate-500 mt-1" x-text="fmtAud(msDownAud) + ' / ' + fmtUsd(audToUsd(msDownAud))">A$200,000 / $132,000</p>
+              </div>
+            </div>
+            <table class="w-full text-xs table-compact">
+              <tbody>
+                <tr><td>Downpayment used</td><td class="text-right font-bold" x-text="fmtAud(msDownAud) + ' / ' + fmtUsd(audToUsd(msDownAud)) + ' / ' + fmtEur(usdToEur(audToUsd(msDownAud)))">A$200,000 / $132,000 / €120,000</td></tr>
+                <tr><td>Value left invested</td><td class="text-right font-bold" x-text="fmtAud(msRemainingAud) + ' / ' + fmtUsd(audToUsd(msRemainingAud))">A$195,530 / $129,050</td></tr>
+                <tr><td>Retirement value</td><td class="text-right font-bold text-purple-800" x-text="fmtUsd(msRetirementUsd)">$290,645</td></tr>
+              </tbody>
+            </table>
+          
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+</div>
+        </div></section>
+
+        <section class="bg-white p-6 rounded-xl shadow-md">
+          <h3 class="font-bold text-lg mb-4 border-b pb-2 text-blue-950 uppercase" contenteditable="true" x-text="ui.apartmentHeading" @blur="ui.apartmentHeading = cleanEdit($event)">IV. Apartment Cashflow &amp; Future Value</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+            <div>
+              <label class="text-xs font-bold text-slate-600" contenteditable="true" x-text="ui.monthlyCostLabel" @blur="ui.monthlyCostLabel = cleanEdit($event)">Monthly euro cost</label>
+              <input type="text" inputmode="numeric" class="w-full p-2 border rounded bg-slate-50" :value="fmtNum(apartmentMonthlyCostEuro)" @input="apartmentMonthlyCostEuro = parseNum($event.target.value)" @blur="$event.target.value = fmtNum(apartmentMonthlyCostEuro)">
+              <p class="text-xs text-slate-500 mt-1" x-text="'Annual: ' + fmtEur(apartmentMonthlyCostEuro * 12)">Annual: €9,600</p>
+            </div>
+            <div>
+              <label class="text-xs font-bold text-slate-600" contenteditable="true" x-text="ui.monthlyRevenueLabel" @blur="ui.monthlyRevenueLabel = cleanEdit($event)">Monthly euro revenue</label>
+              <input type="text" inputmode="numeric" class="w-full p-2 border rounded bg-slate-50" :value="fmtNum(apartmentMonthlyRevenueEuro)" @input="apartmentMonthlyRevenueEuro = parseNum($event.target.value)" @blur="$event.target.value = fmtNum(apartmentMonthlyRevenueEuro)">
+              <p class="text-xs text-slate-500 mt-1" x-text="'Annual: ' + fmtEur(apartmentMonthlyRevenueEuro * 12)">Annual: €14,400</p>
+            </div>
+            <div>
+              <label class="text-xs font-bold text-slate-600" contenteditable="true" x-text="ui.appreciationLabel" @blur="ui.appreciationLabel = cleanEdit($event)">Apartment appreciation</label>
+              <input class="w-full" type="range" min="0" max="0.05" step="0.001" x-model.number="appreciationRate">
+              <p class="text-xs font-bold text-blue-900" x-text="pct(appreciationRate)">3.0%</p>
+            </div>
+          </div>
+          <table class="w-full text-sm table-compact">
+            <tbody>
+              <tr><td>Net apartment cashflow/month before loan</td><td class="text-right font-bold text-green-700" :class="apartmentNetMonthlyEuro &lt; 0 ? 'neg-num' : 'text-green-700'" x-text="fmtEur(apartmentNetMonthlyEuro) + ' / ' + fmtUsd(eurToUsd(apartmentNetMonthlyEuro))">€400 / $440</td></tr>
+              <tr><td>Net apartment cashflow/month after loan</td><td class="text-right font-bold neg-num" :class="apartmentAfterLoanMonthlyEuro &lt; 0 ? 'neg-num' : 'text-green-700'" x-text="fmtEur(apartmentAfterLoanMonthlyEuro) + ' / ' + fmtUsd(eurToUsd(apartmentAfterLoanMonthlyEuro))">-€1,625 / -$1,788</td></tr>
+              <tr><td>Gross apartment value at retirement</td><td class="text-right font-bold text-purple-800" x-text="fmtEur(apartmentRetirementEuro) + ' / ' + fmtUsd(eurToUsd(apartmentRetirementEuro))">€712,880 / $784,168</td></tr>
+              <tr><td>Remaining loan balance at retirement</td><td class="text-right font-bold" x-text="fmtEur(loanBalanceAtRetirementEuro) + ' / ' + fmtUsd(eurToUsd(loanBalanceAtRetirementEuro))">€0 / $0</td></tr>
+              <tr><td>Net apartment equity at retirement</td><td class="text-right font-bold text-purple-800" x-text="fmtEur(apartmentNetRetirementEuro) + ' / ' + fmtUsd(eurToUsd(apartmentNetRetirementEuro))">€712,880 / $784,168</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="bg-white p-6 rounded-xl shadow-md">
+          <h3 class="font-bold text-lg mb-4 border-b pb-2 text-blue-950 uppercase" contenteditable="true" x-text="ui.retirementHeading" @blur="ui.retirementHeading = cleanEdit($event)">V. Retirement Projection</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
+            <div>
+              <label class="text-xs font-bold text-slate-600" contenteditable="true" x-text="ui.k401Label" @blur="ui.k401Label = cleanEdit($event)">Current 401k ($)</label>
+              <input type="text" inputmode="numeric" class="w-full p-2 border rounded bg-slate-50" :value="fmtNum(k401Usd)" @input="k401Usd = parseNum($event.target.value)" @blur="$event.target.value = fmtNum(k401Usd)">
+              <p class="text-xs text-slate-500 mt-1" x-text="fmtUsd(k401Usd)">$1,357,493</p>
+            </div>
+            <div>
+              <label class="text-xs font-bold text-slate-600" contenteditable="true" x-text="ui.k401AnnualLabel" @blur="ui.k401AnnualLabel = cleanEdit($event)">Annual 401k contribution ($)</label>
+              <input type="text" inputmode="numeric" class="w-full p-2 border rounded bg-slate-50" :value="fmtNum(k401AnnualContributionUsd)" @input="k401AnnualContributionUsd = parseNum($event.target.value)" @blur="$event.target.value = fmtNum(k401AnnualContributionUsd)">
+              <p class="text-xs text-slate-500 mt-1">2026 two-person age-50+ max default</p>
+            </div>
+            <div>
+              <label class="text-xs font-bold text-slate-600" contenteditable="true" x-text="ui.rothLabel" @blur="ui.rothLabel = cleanEdit($event)">Current Roth ($)</label>
+              <input type="text" inputmode="numeric" class="w-full p-2 border rounded bg-slate-50" :value="fmtNum(rothUsd)" @input="rothUsd = parseNum($event.target.value)" @blur="$event.target.value = fmtNum(rothUsd)">
+              <p class="text-xs text-slate-500 mt-1" x-text="fmtUsd(rothUsd)">$85,654</p>
+            </div>
+            <div>
+              <label class="text-xs font-bold text-slate-600" contenteditable="true" x-text="ui.rothAnnualLabel" @blur="ui.rothAnnualLabel = cleanEdit($event)">Annual Roth contribution ($)</label>
+              <input type="text" inputmode="numeric" class="w-full p-2 border rounded bg-slate-50" :value="fmtNum(rothAnnualContributionUsd)" @input="rothAnnualContributionUsd = parseNum($event.target.value)" @blur="$event.target.value = fmtNum(rothAnnualContributionUsd)">
+              <p class="text-xs text-slate-500 mt-1">Default left at zero</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+            <div class="bg-purple-50 p-4 rounded-lg border border-purple-200">
+              <div class="text-xs font-bold uppercase text-purple-900">Retirement investment capital</div>
+              <div class="text-3xl font-black text-purple-900" x-text="fmtUsd(retirementAccountWealthAtRetirement)">$5,322,444</div>
+              <div class="text-sm font-bold text-purple-900" x-text="'Inflation-adjusted: ' + fmtUsd(retirementAccountWealthRealUsd)">Inflation-adjusted: $3,966,813</div>
+              <div class="text-xs text-slate-500 mt-1">401k + Roth + ML + Morgan Stanley only; apartment equity excluded.</div>
+            </div>
+            <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+              <div class="text-xs font-bold uppercase text-blue-900">Retirement income, nominal</div>
+              <div class="text-3xl font-black text-blue-900" x-text="fmtUsd(retirementInvestmentIncomeAnnual) + ' / year'">$372,571 / year</div>
+              <div class="text-sm font-bold text-blue-900" x-text="fmtUsd(retirementInvestmentIncomeMonthly) + ' / month'">$31,048 / month</div>
+              <div class="text-xs text-slate-500 mt-1" x-text="'Calculated as retirement investment capital × ' + pct(investRate)">Calculated as retirement investment capital × 7.0%</div>
+            </div>
+            <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+              <div class="text-xs font-bold uppercase text-green-900">Retirement income, inflation-adjusted</div>
+              <div class="text-3xl font-black text-green-900" x-text="fmtUsd(retirementInvestmentIncomeAnnualReal) + ' / year'">$277,677 / year</div>
+              <div class="text-sm font-bold text-green-900" x-text="fmtUsd(retirementInvestmentIncomeMonthlyReal) + ' / month'">$23,140 / month</div>
+              <div class="text-xs text-slate-500 mt-1" x-text="'In today's dollars after inflation factor ÷ ' + inflationFactor.toFixed(2)"></div>
+            </div>
+          </div>
+
+          <table class="w-full text-sm table-compact">
+            <thead class="bg-slate-50">
+              <tr>
+                <th class="text-left">Component</th>
+                <th class="text-right">Actual retirement dollars</th>
+                <th class="text-right">Today's dollars</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>ML after sale</td><td class="text-right font-bold" x-text="fmtUsd(mlRetirementUsd)">$618,807</td><td class="text-right" x-text="fmtUsd(realUsd(mlRetirementUsd))">$461,196</td></tr>
+              <tr><td>Morgan Stanley after sale</td><td class="text-right font-bold" x-text="fmtUsd(msRetirementUsd)">$290,645</td><td class="text-right" x-text="fmtUsd(realUsd(msRetirementUsd))">$216,617</td></tr>
+              <tr><td>401k</td><td class="text-right font-bold" x-text="fmtUsd(k401RetirementUsd) + ' incl. ' + fmtUsd(k401ContributionFutureValueUsd) + ' future contributions'">$4,220,083 incl. $1,162,749 future contributions</td><td class="text-right" x-text="fmtUsd(realUsd(k401RetirementUsd))">$3,145,224</td></tr>
+              <tr><td>Roth</td><td class="text-right font-bold" x-text="fmtUsd(rothRetirementUsd) + ' incl. ' + fmtUsd(rothContributionFutureValueUsd) + ' future contributions'">$192,910 incl. $0 future contributions</td><td class="text-right" x-text="fmtUsd(realUsd(rothRetirementUsd))">$143,776</td></tr>
+              <tr class="bg-blue-50"><td class="font-black">Investment income / year at retirement</td><td class="text-right font-black text-blue-900" x-text="fmtUsd(retirementInvestmentIncomeAnnual) + ' at ' + pct(investRate)">$372,571 at 7.0%</td><td class="text-right font-black text-blue-900" x-text="fmtUsd(retirementInvestmentIncomeAnnualReal)">$277,677</td></tr>
+              <tr class="bg-blue-50"><td class="font-black">Investment income / month at retirement</td><td class="text-right font-black text-blue-900" x-text="fmtUsd(retirementInvestmentIncomeMonthly)">$31,048</td><td class="text-right font-black text-blue-900" x-text="fmtUsd(retirementInvestmentIncomeMonthlyReal)">$23,140</td></tr>
+              <tr><td>Apartment net equity</td><td class="text-right font-bold" x-text="fmtUsd(eurToUsd(apartmentNetRetirementEuro)) + ' / ' + fmtEur(apartmentNetRetirementEuro)">$784,168 / €712,880</td><td class="text-right" x-text="fmtUsd(realUsd(eurToUsd(apartmentNetRetirementEuro))) + ' / ' + fmtEur(realEur(apartmentNetRetirementEuro))">$584,440 / €531,309</td></tr>
+              <tr class="bg-purple-50"><td class="font-black">TOTAL</td><td class="text-right font-black text-purple-900" x-text="fmtUsd(totalRetirementUsd) + ' / ' + fmtEur(usdToEur(totalRetirementUsd))">$6,106,613 / €5,551,466</td><td class="text-right font-black text-purple-900" x-text="fmtUsd(totalRetirementRealUsd) + ' / ' + fmtEur(usdToEur(totalRetirementRealUsd))">$4,551,253 / €4,137,503</td></tr>
+              <tr><td colspan="3" class="text-xs text-slate-500" x-text="'Inflation factor over ' + yearsToRetirement + ' years at ' + pct(inflationRate) + ': ÷ ' + inflationFactor.toFixed(2)">Inflation factor over 12 years at 2.5%: ÷ 1.34</td></tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+
+    <section class="bg-white p-6 rounded-xl shadow-md border-t-4 border-slate-800">
+      <h3 class="font-bold text-lg mb-4 border-b pb-2 text-slate-900 uppercase" contenteditable="true" x-text="ui.appendixHeading" @blur="ui.appendixHeading = cleanEdit($event)">Appendix: Calculations and Formulas</h3>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 text-sm leading-relaxed">
+        <div>
+          <h4 class="font-black text-blue-950 mb-2">Current assumptions in this saved version</h4>
+          <ul class="list-disc pl-5 space-y-1 text-slate-700">
+            <li>Investment growth default: <strong x-text="pct(investRate)">7.0%</strong> per year.</li>
+            <li>Inflation default: <strong x-text="pct(inflationRate)">2.5%</strong> per year.</li>
+            <li>German loan rate default: <strong x-text="pct(loanRate)">4.2%</strong> per year.</li>
+            <li>Apartment appreciation default: <strong x-text="pct(appreciationRate)">3.0%</strong> per year.</li>
+            <li>401(k) annual contribution default: <strong x-text="fmtUsd(k401AnnualContributionUsd)">$65,000</strong>.</li>
+            <li>Roth annual contribution default: <strong x-text="fmtUsd(rothAnnualContributionUsd)">$0</strong>.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-black text-amber-950 mb-2">Tax caveats added to this version</h4>
+          <ul class="list-disc pl-5 space-y-1 text-slate-700">
+            <li><strong>Stock sales:</strong> sale proceeds are not the taxable amount; realized gain equals sale proceeds minus tax basis, adjusted for any wash sales or other rules.</li>
+            <li><strong>U.S. taxes:</strong> long-term gains may be taxed at 0%, 15%, or 20%, with possible 3.8% NIIT and state tax.</li>
+            <li><strong>Germany:</strong> German tax residency may affect worldwide investment income, stock sales, apartment rental income, and later property sale tax treatment.</li>
+            <li><strong>Purchase costs:</strong> German closing costs are not currently deducted from retirement assets or added to loan requirements.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-black text-blue-950 mb-2">Currency conversions</h4>
+          <table class="w-full text-xs table-compact">
+            <tbody>
+              <tr><td>EUR to USD</td><td class="text-right font-bold">USD = EUR × EUR/USD</td></tr>
+              <tr><td>USD to EUR</td><td class="text-right font-bold">EUR = USD ÷ EUR/USD</td></tr>
+              <tr><td>AUD to USD</td><td class="text-right font-bold">USD = AUD × AUD/USD</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h4 class="font-black text-blue-950 mb-2">Downpayment and loan</h4>
+          <table class="w-full text-xs table-compact">
+            <tbody>
+              <tr><td>Stock-sale default downpayment</td><td class="text-right font-bold">(ML sale USD + Morgan sale AUD × AUD/USD) ÷ EUR/USD</td></tr>
+              <tr><td>Total downpayment</td><td class="text-right font-bold">Manual euro box only; defaults to stock-sale default and resets when stock-sale values change</td></tr>
+              <tr><td>Loan amount</td><td class="text-right font-bold">max(0, apartment cost − downpayment)</td></tr>
+              <tr><td>Monthly loan payment</td><td class="text-right font-bold">P × r ÷ (1 − (1 + r)<sup>−n</sup>), where r = annual rate ÷ 12 and n = years × 12</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h4 class="font-black text-blue-950 mb-2">Investment and apartment future value</h4>
+          <table class="w-full text-xs table-compact">
+            <tbody>
+              <tr><td>Invested-account future value</td><td class="text-right font-bold">starting value × (1 + investment rate)<sup>years</sup></td></tr>
+              <tr><td>Annual contribution future value</td><td class="text-right font-bold">annual contribution × (((1 + rate)<sup>years</sup> − 1) ÷ rate)</td></tr>
+              <tr><td>Apartment gross future value</td><td class="text-right font-bold">apartment cost × (1 + appreciation rate)<sup>years</sup></td></tr>
+              <tr><td>Apartment net equity</td><td class="text-right font-bold">gross apartment future value − remaining loan balance at retirement</td></tr>
+              <tr><td>Total projected retirement value</td><td class="text-right font-bold">ML after sale + Morgan Stanley after sale + 401(k) + Roth + net apartment equity in USD</td></tr>
+              <tr><td>Investment income at retirement</td><td class="text-right font-bold">(ML after sale + Morgan Stanley after sale + 401(k) + Roth) × investment rate; apartment equity excluded</td></tr>
+              <tr><td>Inflation-adjusted value</td><td class="text-right font-bold">actual future value ÷ (1 + inflation rate)<sup>years</sup></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<script id="main-script">
+const DEFAULT_CONFIG = {
+  "apartmentCost": 500000,
+  "investRate": 0.07,
+  "inflationRate": 0.0248,
+  "eurUsd": 1.1,
+  "audUsd": 0.66,
+  "yearsToRetirement": 12,
+  "cashDownEuro": 419136,
+  "loanRate": 0.042,
+  "loanYears": 10,
+  "mlInitialUsd": 474757.64,
+  "mlDownUsd": 200000,
+  "msInitialAud": 395530,
+  "msDownAud": 395530,
+  "apartmentMonthlyCostEuro": 800,
+  "apartmentMonthlyRevenueEuro": 1200,
+  "appreciationRate": 0.03,
+  "k401Usd": 1357492.62,
+  "rothUsd": 85654.32,
+  "k401AnnualContributionUsd": 65000,
+  "rothAnnualContributionUsd": 0,
+  "downpaymentIsManual": false
+};
+
+const CONFIG = {"apartmentCost":500000,"investRate":0.07,"inflationRate":0.0248,"eurUsd":1.1,"audUsd":0.66,"yearsToRetirement":12,"cashDownEuro":301818,"loanRate":0.042,"loanYears":10,"mlInitialUsd":474757.64,"mlDownUsd":200000,"msInitialAud":395530,"msDownAud":200000,"apartmentMonthlyCostEuro":800,"apartmentMonthlyRevenueEuro":1200,"appreciationRate":0.03,"k401Usd":1357492.62,"rothUsd":85654.32,"k401AnnualContributionUsd":65000,"rothAnnualContributionUsd":0,"downpaymentIsManual":false};
+
+function retirementApp() {
+  return {
+    ui: {
+      "mainTitle": "Germany Apartment & Retirement Funding Dashboard — TAXES NOT MODELED",
+      "subTitle": "Balance German loan size, ML/Morgan Stanley stock sales, apartment cashflow, and retirement value",
+      "cardApartment": "Apartment Cost",
+      "cardLoan": "German Loan Needed",
+      "cardMonthly": "Loan Payment",
+      "cardRetirement": "Projected Retirement Total",
+      "generalHeading": "General Assumptions",
+      "apartmentCostLabel": "Apartment cost",
+      "expectationLabel": "Investment expectation",
+      "inflationLabel": "Inflation expectation",
+      "eurUsdLabel": "EUR → USD",
+      "audUsdLabel": "AUD → USD",
+      "retireYearsLabel": "Years to retirement",
+      "loanHeading": "I. German Loan",
+      "cashDownEuroLabel": "Total downpayment (€)",
+      "loanRateLabel": "Loan interest rate",
+      "loanYearsLabel": "Years to pay off",
+      "loanTotalDown": "Total downpayment",
+      "loanAmountLabel": "Loan amount",
+      "loanMonthlyLabel": "Monthly payment",
+      "loanAnnualLabel": "Annual payment",
+      "mlHeading": "II. Merrill Lynch Stock Sale",
+      "msHeading": "III. Morgan Stanley Stock Sale",
+      "initialUsdLabel": "Initial value ($)",
+      "downUsdLabel": "Downpayment sale ($)",
+      "initialAudLabel": "Initial value (A$)",
+      "downAudLabel": "Downpayment sale (A$)",
+      "apartmentHeading": "IV. Apartment Cashflow & Future Value",
+      "monthlyCostLabel": "Monthly euro cost",
+      "monthlyRevenueLabel": "Monthly euro revenue",
+      "appreciationLabel": "Apartment appreciation",
+      "retirementHeading": "V. Retirement Projection",
+      "k401Label": "Current 401k ($)",
+      "k401AnnualLabel": "Annual 401k contribution ($)",
+      "rothLabel": "Current Roth ($)",
+      "rothAnnualLabel": "Annual Roth contribution ($)",
+      "appendixHeading": "Appendix: Calculations and Formulas"
+},
+
+    apartmentCost: CONFIG.apartmentCost,
+    investRate: CONFIG.investRate,
+    inflationRate: CONFIG.inflationRate,
+    eurUsd: CONFIG.eurUsd,
+    audUsd: CONFIG.audUsd,
+    yearsToRetirement: CONFIG.yearsToRetirement,
+    cashDownEuro: CONFIG.cashDownEuro,
+    loanRate: CONFIG.loanRate,
+    loanYears: CONFIG.loanYears,
+    mlInitialUsd: CONFIG.mlInitialUsd,
+    mlDownUsd: CONFIG.mlDownUsd,
+    msInitialAud: CONFIG.msInitialAud,
+    msDownAud: CONFIG.msDownAud,
+    apartmentMonthlyCostEuro: CONFIG.apartmentMonthlyCostEuro,
+    apartmentMonthlyRevenueEuro: CONFIG.apartmentMonthlyRevenueEuro,
+    appreciationRate: CONFIG.appreciationRate,
+    k401Usd: CONFIG.k401Usd,
+    rothUsd: CONFIG.rothUsd,
+    k401AnnualContributionUsd: CONFIG.k401AnnualContributionUsd,
+    rothAnnualContributionUsd: CONFIG.rothAnnualContributionUsd,
+    downpaymentIsManual: CONFIG.downpaymentIsManual || false,
+
+    init() {
+      if (!this.downpaymentIsManual) this.syncDownpaymentFromStock();
+      this.$watch('mlDownUsd', () => this.resetDownpaymentToStockSales());
+      this.$watch('msDownAud', () => this.resetDownpaymentToStockSales());
+      this.$watch('audUsd', () => this.resetDownpaymentToStockSales());
+      this.$watch('eurUsd', () => this.resetDownpaymentToStockSales());
+    },
+
+    resetDownpaymentToStockSales() {
+      this.downpaymentIsManual = false;
+      this.syncDownpaymentFromStock();
+    },
+
+    syncDownpaymentFromStock() {
+      this.cashDownEuro = Math.round(this.stockDownEuro);
+    },
+
+    cleanEdit(event) { return event.target.innerText.trim(); },
+
+    fmtNum(v) { return Math.round(Number(v || 0)).toLocaleString('en-US'); },
+    parseNum(v) { const n = Number(String(v || '').replace(/[^0-9.-]/g, '')); return Number.isFinite(n) ? Math.round(n) : 0; },
+    fmtEur(v) { return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(Math.round(Number(v || 0))); },
+    fmtUsd(v) { return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(Math.round(Number(v || 0))); },
+    fmtAud(v) { return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'AUD', maximumFractionDigits: 0 }).format(Math.round(Number(v || 0))); },
+    pct(v) { return (Number(v || 0) * 100).toFixed(1) + '%'; },
+
+    eurToUsd(v) { return Number(v || 0) * Number(this.eurUsd || 0); },
+    usdToEur(v) { return Number(this.eurUsd || 0) === 0 ? 0 : Number(v || 0) / Number(this.eurUsd || 1); },
+    audToUsd(v) { return Number(v || 0) * Number(this.audUsd || 0); },
+
+    grow(value, rate) { return Number(value || 0) * Math.pow(1 + Number(rate || 0), Number(this.yearsToRetirement || 0)); },
+    contributionFutureValue(payment, rate) {
+      const p = Number(payment || 0);
+      const r = Number(rate || 0);
+      const years = Number(this.yearsToRetirement || 0);
+      if (p === 0 || years <= 0) return 0;
+      if (r === 0) return p * years;
+      return p * ((Math.pow(1 + r, years) - 1) / r);
+    },
+
+    get inflationFactor() { return Math.pow(1 + Number(this.inflationRate || 0), Number(this.yearsToRetirement || 0)); },
+    realUsd(value) { return Number(value || 0) / this.inflationFactor; },
+    realEur(value) { return Number(value || 0) / this.inflationFactor; },
+
+    get mlRemainingUsd() { return Math.max(0, Number(this.mlInitialUsd || 0) - Number(this.mlDownUsd || 0)); },
+    get msRemainingAud() { return Math.max(0, Number(this.msInitialAud || 0) - Number(this.msDownAud || 0)); },
+
+    get mlRetirementUsd() { return this.grow(this.mlRemainingUsd, this.investRate); },
+    get msRetirementUsd() { return this.grow(this.audToUsd(this.msRemainingAud), this.investRate); },
+    get k401ContributionFutureValueUsd() { return this.contributionFutureValue(this.k401AnnualContributionUsd, this.investRate); },
+    get rothContributionFutureValueUsd() { return this.contributionFutureValue(this.rothAnnualContributionUsd, this.investRate); },
+    get k401RetirementUsd() { return this.grow(this.k401Usd, this.investRate) + this.k401ContributionFutureValueUsd; },
+    get rothRetirementUsd() { return this.grow(this.rothUsd, this.investRate) + this.rothContributionFutureValueUsd; },
+
+    get stockDownEuro() { return this.usdToEur(Number(this.mlDownUsd || 0) + this.audToUsd(this.msDownAud)); },
+    get totalDownEuro() { return Math.max(0, Number(this.cashDownEuro || 0)); },
+    get loanAmount() { return Math.max(0, Number(this.apartmentCost || 0) - this.totalDownEuro); },
+
+    get germanLoanPayment() {
+      const principal = this.loanAmount;
+      const months = Number(this.loanYears || 0) * 12;
+      const monthlyRate = Number(this.loanRate || 0) / 12;
+      if (principal <= 0 || months <= 0) return 0;
+      if (monthlyRate === 0) return principal / months;
+      return principal * monthlyRate / (1 - Math.pow(1 + monthlyRate, -months));
+    },
+
+    get apartmentNetMonthlyEuro() { return Number(this.apartmentMonthlyRevenueEuro || 0) - Number(this.apartmentMonthlyCostEuro || 0); },
+    get apartmentAfterLoanMonthlyEuro() { return this.apartmentNetMonthlyEuro - this.germanLoanPayment; },
+    get apartmentRetirementEuro() { return Number(this.apartmentCost || 0) * Math.pow(1 + Number(this.appreciationRate || 0), Number(this.yearsToRetirement || 0)); },
+
+    get loanBalanceAtRetirementEuro() {
+      const principal = this.loanAmount;
+      const monthsTotal = Number(this.loanYears || 0) * 12;
+      const monthsElapsed = Math.min(Number(this.yearsToRetirement || 0) * 12, monthsTotal);
+      const monthlyRate = Number(this.loanRate || 0) / 12;
+      if (principal <= 0 || monthsTotal <= 0 || monthsElapsed >= monthsTotal) return 0;
+      const payment = this.germanLoanPayment;
+      if (monthlyRate === 0) return Math.max(0, principal - payment * monthsElapsed);
+      const balance = principal * Math.pow(1 + monthlyRate, monthsElapsed) - payment * ((Math.pow(1 + monthlyRate, monthsElapsed) - 1) / monthlyRate);
+      return Math.max(0, balance);
+    },
+    get apartmentNetRetirementEuro() { return Math.max(0, this.apartmentRetirementEuro - this.loanBalanceAtRetirementEuro); },
+
+    get germanClosingCostLowEuro() { return Number(this.apartmentCost || 0) * 0.055; },
+    get germanClosingCostMidEuro() { return Number(this.apartmentCost || 0) * 0.09; },
+    get germanClosingCostHighEuro() { return Number(this.apartmentCost || 0) * 0.15; },
+    get cashNeededWithClosingLowEuro() { return this.totalDownEuro + this.germanClosingCostLowEuro; },
+    get cashNeededWithClosingMidEuro() { return this.totalDownEuro + this.germanClosingCostMidEuro; },
+    get cashNeededWithClosingHighEuro() { return this.totalDownEuro + this.germanClosingCostHighEuro; },
+
+    get totalRetirementUsd() {
+      return this.mlRetirementUsd + this.msRetirementUsd + this.k401RetirementUsd + this.rothRetirementUsd + this.eurToUsd(this.apartmentNetRetirementEuro);
+    },
+    get totalRetirementRealUsd() { return this.realUsd(this.totalRetirementUsd); },
+
+    currentConfig() {
+      return {
+        apartmentCost: this.apartmentCost,
+        investRate: this.investRate,
+        inflationRate: this.inflationRate,
+        eurUsd: this.eurUsd,
+        audUsd: this.audUsd,
+        yearsToRetirement: this.yearsToRetirement,
+        cashDownEuro: this.cashDownEuro,
+        loanRate: this.loanRate,
+        loanYears: this.loanYears,
+        mlInitialUsd: this.mlInitialUsd,
+        mlDownUsd: this.mlDownUsd,
+        msInitialAud: this.msInitialAud,
+        msDownAud: this.msDownAud,
+        apartmentMonthlyCostEuro: this.apartmentMonthlyCostEuro,
+        apartmentMonthlyRevenueEuro: this.apartmentMonthlyRevenueEuro,
+        appreciationRate: this.appreciationRate,
+        k401Usd: this.k401Usd,
+        rothUsd: this.rothUsd,
+        k401AnnualContributionUsd: this.k401AnnualContributionUsd,
+        rothAnnualContributionUsd: this.rothAnnualContributionUsd,
+        downpaymentIsManual: this.downpaymentIsManual
+      };
+    },
+
+    resetDefaults() {
+      Object.assign(this, JSON.parse(JSON.stringify(DEFAULT_CONFIG)));
+    },
+
+
+
+    get retirementAccountWealthAtRetirement() {
+      return this.mlRetirementUsd + this.msRetirementUsd + this.k401RetirementUsd + this.rothRetirementUsd;
+    },
+
+    get retirementAccountWealthRealUsd() {
+      return this.realUsd(this.retirementAccountWealthAtRetirement);
+    },
+
+    get retirementInvestmentIncomeAnnual() {
+      return this.retirementAccountWealthAtRetirement * Number(this.investRate || 0);
+    },
+
+    get retirementInvestmentIncomeMonthly() {
+      return this.retirementInvestmentIncomeAnnual / 12;
+    },
+
+    get retirementInvestmentIncomeAnnualReal() {
+      return this.realUsd(this.retirementInvestmentIncomeAnnual);
+    },
+
+    get retirementInvestmentIncomeMonthlyReal() {
+      return this.retirementInvestmentIncomeAnnualReal / 12;
+    },
+
+                saveHtml() {
+      let htmlContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+      const newConfigStr = "const CONFIG = " + JSON.stringify(this.currentConfig()) + ";";
+      const newUiStr = "ui: " + JSON.stringify(this.ui, null, 6) + ",";
+      htmlContent = htmlContent.replace(/const CONFIG = \{.*?\};/, newConfigStr);
+      htmlContent = htmlContent.replace(/ui: \{[\s\S]*?\},\s*\n\n    apartmentCost:/, newUiStr + "\n\n    apartmentCost:");
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(htmlContent, 'text/html');
+      const blob = new Blob([doc.documentElement.outerHTML], { type: 'text/html' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = this.ui.mainTitle.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '') + '.html';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+  };
+}
+</script>
+
+
+</body></html>
